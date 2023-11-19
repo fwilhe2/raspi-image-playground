@@ -9,9 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: usimd/pi-gen-action@v1.7.0
+        id: build
         with:
           image-name: test
-          verbose-output: true
       - uses: actions/upload-artifact@v3
         with:
           name: pi-gen-image
